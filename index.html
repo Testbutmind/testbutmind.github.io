@@ -7,17 +7,30 @@
 <style>
   body { margin: 0; background: #F7F9FC; color: #1C2230; font: 16px/1.7 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
   main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 26px; margin: 0 0 8px; }
+  h1 { font-size: 26px; margin: 0; }
   h2 { font-size: 18px; margin: 28px 0 6px; }
   p, li { margin: 4px 0; }
   ul { padding-left: 20px; }
   .meta { color: #5A6273; }
-  @media (prefers-color-scheme: dark) { body { background: #12151C; color: #E6E9EF; } .meta { color: #A3ABB9; } }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  header svg { flex: none; }
+  a { color: #2457D6; text-underline-offset: 3px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #12151C; color: #E6E9EF; }
+    .meta { color: #A3ABB9; }
+    a { color: #9DB8FF; }
+    header path:first-child { fill: #9DB8FF; }
+    header path:last-child { stroke: #9DB8FF; }
+  }
 </style>
 </head>
 <body>
 <main>
+<header>
+<!-- 앱 아이콘과 같은 알약 -->
+<svg width="40" height="40" viewBox="0 0 108 108" aria-hidden="true"><g transform="rotate(-45 54 54)"><path d="M54,40h-12a14,14 0 0 0 0 28h12z" fill="#2457D6"/><path d="M42,40h24a14,14 0 0 1 0 28h-24a14,14 0 0 1 0 -28z" fill="none" stroke="#2457D6" stroke-width="5"/></g></svg>
 <h1>개인정보처리방침</h1>
+</header>
 <p class="meta">앱 이름: 약먹는거까먹어서내가쓰려고만든앱 (패키지 app.yakcheck.android)<br>시행일: 2026년 10월 18일</p>
 
 <h2>모으는 정보</h2>
